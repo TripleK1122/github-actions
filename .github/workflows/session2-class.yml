@@ -5,14 +5,15 @@ on:
     branches: feature/session2-class
   pull_request: main
 jobs:
-  runs-on: ubuntu-latest
+  event-info:
+   runs-on: ubuntu-latest
   steps:
     - name: Checkout Code
       uses: actions/checkout@v4
 
     - name: Report Event
       run: echo "Triggered by:${{ github.event_name }}"
-      
+
     - name: Show Branch
       run: echo "Branch:${{ github.ref_name }}"
 
