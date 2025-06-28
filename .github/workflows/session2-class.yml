@@ -10,8 +10,8 @@ on:
         uses: actions/checkout@v4
 
       - name: Report Event
-        run: echo "Triggered by: ${{ github.event_name }}"
+        run: echo "Triggered by:${{ github.event_name }}"
       - name: Show Branch
-        run: echo "Branch: ${{ github.ref_name }}"
+        run: echo "Branch:${{ github.ref_name }}"
 
   
