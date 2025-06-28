@@ -4,7 +4,7 @@ on:
   push:
     branches: feature/session2-class
   pull_request: main
-  
+
 jobs:
   event-info:
    runs-on: ubuntu-latest
