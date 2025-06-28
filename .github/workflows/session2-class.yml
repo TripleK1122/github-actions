@@ -4,6 +4,7 @@ on:
   push:
     branches: feature/session2-class
   pull_request: main
+  
 jobs:
   event-info:
    runs-on: ubuntu-latest
@@ -16,4 +17,3 @@ jobs:
 
     - name: Show Branch
       run: echo "Branch:${{ github.ref_name }}"
-      
